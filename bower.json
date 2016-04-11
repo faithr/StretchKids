@@ -3,7 +3,10 @@
   "dependencies": {
     "materialize": "latest",
     "angular": "^1.5.0",
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.9",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "gold-elements": "PolymerElements/gold-elements#^1.0.1"
   },
   "devDependencies": {
     "angular": "^1.5.0",
