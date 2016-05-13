@@ -1,0 +1,247 @@
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title Stretch Kids—Coming Soon
+        link(rel='icon', href='img/favicon.ico')
+        //link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,500,500italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,400italic|Rancho&effect=shadow-multiple', rel='stylesheet', type='text/css')
+        //link(href='https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+        link(rel='stylesheet', href='css/sprites.css')
+        style.
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+            nav ul a,
+            nav .brand-logo {
+                color: #444;
+                /*url("stretchkids-logo.jpg");*/
+            }
+            #logo-container {
+                text-align: center;
+            }
+            .footer-copyright {
+                margin-left: 30px;
+            }
+            h5 {
+                font-size: 1.5rem;
+                line-height: 110%;
+                margin: 0.82rem 0 0.656rem 0;
+            }
+            .main-heading {
+                font-family: 'Rancho', sans-serif;
+                /*font-weight: 800;*/
+            }
+            h1 {
+                font-weight: 900;
+            }
+            .btn, .btn-large {
+                background-color: #c66a0d ! important;
+            }
+            h5 {
+                font-size: 1.5rem;
+                line-height: 110%;
+                margin: 0.82rem 0 0.656rem 0;
+            }
+            .teal-text.text-lighten-2 {
+                color: #165bb9 !important;
+                font-size: 50px;
+            }
+            p {
+                line-height: 2rem;
+            }
+            .button-collapse {
+                color: #26a69a;
+            }
+            .parallax-container {
+                min-height: 500px;
+                line-height: 0;
+                height: auto;
+                color: rgba(255, 255, 255, .9);
+            }
+            .parallax-container .section {
+                width: 100%;
+            }
+            @media only screen and (max-width: 992px) {
+                .parallax-container .section {
+                    position: absolute;
+                    top: 40%;
+                }
+                #index-banner .section {
+                    top: 10%;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                #index-banner .section {
+                    top: 0;
+                }
+            }
+            .icon-block {
+                padding: 0 15px;
+            }
+            .icon-block .material-icons {
+                font-size: inherit;
+            }
+            footer.page-footer {
+                margin: 0;
+            }
+            div.row.center {
+                display: none;
+            }
+            .green-text {
+                color: #39a65b !important;
+            }
+            .orange-text {
+                color: #f25022 !important;
+            }
+            footer.page-footer .footer-copyright {
+                background-color: none !important;
+            }
+            footer.page-footer .footer-copyright {
+                background-color: none !important;
+            }
+    body
+        .icon-karate
+        .icon-tutor
+        nav.white(role='navigation')
+            .nav-wrapper.container
+                a#logo-container.icon.icon-stretchkids-logo
+                ul.right.hide-on-med-and-down
+                    // <li><a href="#">Navbar Link</a></li>
+                ul#nav-mobile.side-nav
+                    li
+                        a(href='#') Navbar Link
+                // <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        #index-banner.parallax-container
+            .section.no-pad-bot
+                .container
+                    br
+                    br
+                    h1.main-heading.header.center.teal-text.text-lighten-2.font-effect-shadow-multiple
+                        | Afterschool
+                        | Activities for KIDS
+                    .row.center
+                        // <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    .row.center
+                        a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='http://materializecss.com/getting-started.html') Get Started
+                    br
+                    br
+            .parallax
+                .icon-background1-rev
+                //img(src='img/background1-rev.jpg', alt='Unsplashed background img 1')
+        .container
+            .section
+                h5(style='text-align: center; color: #c66a0d; font-weight: 400; font-size: 26px')
+                    | Bringing
+                    | Parents and Afterschool Activities Together
+                p
+                    | StretchKids.com will provide the quickest and most comprehensive way for parents to find afterschool and
+                    | summer activities and services for their kids. For the providers of those activities, from individuals
+                    | providing part-time lessons to national chains and franchises, StretchKids.com will a low-cost, effective
+                    | way to reach parents. How low a cost? The basic listing is free. How effective? StretchKids plans to be the
+                    | easiest to access, most comprehensive listings available.
+                // Icon Section
+                .row
+                    .col.s12.m4
+                        .icon-block
+                            // <h2 class="center orange-text"><i class="material-icons">flash_on</i></h2>
+                            h5.center
+                                img(src='img/parents.jpg', alt='parents img', height='160', width='220')
+                                br
+                                br
+                                | Parents
+                            p.light(style='line-height: 1.6em')
+                                | StretchKids will provide parents with the most
+                                | comprehensive list of activities and
+                                | services for their children. By focusing on having an up to date and comprehensive listing in
+                                | their local area, StretchKids hopes to provide parents with more and better options in a
+                                | quick and timely manner. As the systems evolves, Stretch Kids will use machine learning
+                                | technology to help parents find activities they may want but aren’t aware of.
+                    .col.s12.m4
+                        .icon-block
+                            // <h2 class="center orange-text"><i class="material-icons">group</i></h2>
+                            h5.center
+                                img(src='img/tutor.jpg', alt='tutor img', height='160', width='220')
+                                br
+                                br
+                                | Small
+                            p.light(style='line-height: 1.6em')
+                                | For individual and smaller activity and service
+                                | providers, including individuals,
+                                | whether fulltime or part-time, StretchKids will provide a cost effective way to be found by new
+                                | and former clients. The goal of Stretch Kids is to allow all providers to reach local
+                                | clients.
+                            p.light(style='line-height: 1.6em')
+                                | Listings are free. As an computer-based service, Stretch
+                                | Kids will be able to show
+                                | you how effective you Stretch Kids listing is and offer enhancements to improve it further.
+                            p.light(style='line-height: 1.6em')
+                                | Not accepting new clients? StretchKids can indicate
+                                | that, and only provide access
+                                | through an anonymous message feature.
+                    .col.s12.m4
+                        .icon-block
+                            // <h2 class="center orange-text"><i class="material-icons">settings</i></h2>
+                            h5.center
+                                img(src='img/karate.jpg', alt='karate img', height='160', width='220')
+                                br
+                                br
+                                | Large
+                            p.light(style='line-height: 1.6em')
+                                | Stretch Kids will provide free listings for larger
+                                | organizations and businesses
+                                | that involve more kids, parents, and families and may have multiple locations. Stretch Kids will
+                                | be an inexpensive additional way to reach their prospective customers when they are looking for
+                                | activities and services for their kids.
+        .container
+            .section
+                .row
+                    .col.s12.center
+                        // <h3><i class="mdi-action-account-box orange-text"></i></h3>
+                        h4(style='text-align: center; color: #c66a0d; font-weight: 400; font-size: 32px') Contact Us
+                        .row
+                            form.col.s12(action='mailto:david@stretchkids.com', enctype='text/plain', method='get')
+                                .row
+                                    .input-field.col.m6.s12
+                                        // <i class="material-icons prefix">account_circle</i>
+                                        input#first_name.validate(type='text', name='First Name')
+                                        label(for='first_name') First Name
+                                    .input-field.col.m6.s12
+                                        input#last_name.validate(type='text', name='Last Name')
+                                        label(for='last_name') Last Name
+                                .row
+                                    div
+                                        .input-field.col.m6.s12
+                                            i.material-icons.prefix email
+                                            input#email.validate(type='email', name='E-mail')
+                                            label(for='email') Email
+                                        .input-field.col.m6.s12
+                                            i.material-icons.prefix phone
+                                            input#phone.validate(type='text', name='Phone')
+                                            label(for='phone') Phone
+                                    button.btn.waves-effect.waves-light(type='submit', name='Send Contact Info')
+                                        | Submit
+                                        i.material-icons.right send
+                        p.left-align.light
+        .col.l6.s12
+            //
+              <h5 class="white-text">Company Bio</h5>
+              <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        .col.l3.s12
+        footer
+            .footer-copyright
+                // <div class="container">
+                a.black-text ©StretchKids, LLC
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+        | >
+        script.
+            (function ($) {
+                $(function () {
+                    $('.button-collapse').sideNav();
+                    $('.parallax').parallax();
+                }); // end of document ready
+            })(jQuery); // end of jQuery name space

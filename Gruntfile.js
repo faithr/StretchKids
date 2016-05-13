@@ -1,38 +1,38 @@
-/**
- * Created by David Ziegelheim on 4/8/2016.
- */
 module.exports = function (grunt) {
-    // Configure grunt 
     grunt.initConfig({
-        sprite: {
-            all: {
-                src: ['img/*.jpg', '!img/spritesheet.jpg'],
-                dest: 'img/spritesheet.jpg',
-                destCss: 'css/sprites.css'
+        pkg: grunt.file.readJSON('package.json'),
+        wiredep: {
+            target: {
+                src: 'index.html' // point to your HTML file.
             }
         },
-        postcss: {
+        cssmin: {
             options: {
-
-                map: {
-                    inline: false, // save all sourcemaps as separate files...
-                    annotation: 'css/maps/' // ...to the specified directory
-                },
-
-                processors: [
-                    require('pixrem')(), // add fallbacks for rem units
-                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-                    require('cssnano')() // minify the result
-                ]
+                shorthandCompacting: false,
+                roundingPrecision: -1
             },
-            dist: {
-                src: ['css/*.css'],
-                dest: 'dist/master.css'
+            target: {
+                files: {
+                    'css/sk.css': ['css/font.css', 'css/images.css', 'css/materialize.min.css', 'css/style.css']
+                }
+            }
+        },
+        uglify: {
+            options: {
+                mangle: false
+            },
+
+            target: {
+                files: {
+
+                    'js/sk.js': ['js/jquery.min.js', 'js/materialize.min.js', 'js/init.js']
+                }
             }
         }
     });
 
-    // Load in `grunt-spritesmith` 
-    grunt.loadNpmTasks('grunt-spritesmith');
-    grunt.loadNpmTasks('grunt-postcss');
-};
+
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-wiredep');
+}
